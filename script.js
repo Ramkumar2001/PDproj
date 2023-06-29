@@ -28,6 +28,7 @@ window.onload = function() {
         clearInterval(countdownInterval);
         document.getElementById('letter').style.display = 'block';
         countdownElement.innerHTML = '';
+        document.getElementById('early').style.display = 'none';
       }
     }, 1000);
   }
