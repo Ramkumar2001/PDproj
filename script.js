@@ -1,6 +1,7 @@
 window.onload = function() {
     var currentDate = new Date();
     var activationDate = new Date('2023-06-30T23:06:10'); // Set the activation date and time
+
   
     if (currentDate >= activationDate) {
       document.getElementById('letter').style.display = 'block';
@@ -28,9 +29,9 @@ window.onload = function() {
         clearInterval(countdownInterval);
         document.getElementById('letter').style.display = 'block';
         countdownElement.innerHTML = '';
+
         document.getElementById('early').style.display = 'none';
       }
     }, 1000);
   }
-  
   
