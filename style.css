@@ -6,9 +6,17 @@ body {
     color: #333;
   }
   
-  div#letter {
-    display: none;
+  div#letter, div#letter2 {
     margin: 20px;
+    overflow: hidden;
+    max-height: 50px; /* Adjust the initial height as per your preference */
+    transition: max-height 0.5s ease;
+    cursor: pointer;
+    border: 2px solid black;
+  }
+
+  div#letter2{
+    display: none;
   }
 
   h2#early {
@@ -19,6 +27,14 @@ body {
   p#countdown {
     margin: 20px;
     color: blueviolet;
+    font-size: 40px;
+  }
+
+  img{
+    width: 60%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
 
   @media only screen and (max-width: 600px) {
@@ -36,5 +52,8 @@ body {
 
     p#countdown {
       margin: 10px;
+    }
+    img{
+      width: 100%;
     }
   }
