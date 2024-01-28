@@ -1,6 +1,6 @@
 window.onload = function() {
     var currentDate = new Date();
-    var activationDate = new Date('2024-01-26T00:00:00'); // Set the activation date and time
+    var activationDate = new Date('2024-02-18T00:00:00'); // Set the activation date and time
   
     if (currentDate >= activationDate) {
       document.getElementById('letter2').style.display = 'block';
